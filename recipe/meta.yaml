@@ -1,4 +1,4 @@
-{% set version = "0.5-0.2" %}
+{% set version = "0.5-2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/emoa_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/emoa/emoa_{{ version }}.tar.gz
-  sha256: d9e8bd286c4578be76a3dc7a1110bbb751eb8d0e451143273f0ced09878a243b
+  sha256: e9ef9bf0058b63b43a4bc7aa2f696ef1b4c3a0dc8aa804bc6347f8f650ebe1a8
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
